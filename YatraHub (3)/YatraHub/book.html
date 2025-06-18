@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatra Hub - Booking</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+
+    <!-- Booking Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <h1>Book Your Next Adventure</h1>
+        <p>Fill out the form below to book your trip with Yatra Hub!</p>
+
+        <form class="booking-form">
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="Enter your destination"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" />
+          </div>
+
+          <div class="form-group">
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              placeholder="Number of guests"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="room">Room Type</label>
+            <select id="room" name="room">
+              <option value="single">Single Room</option>
+              <option value="double">Double Room</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="preferences">Special Preferences</label>
+            <textarea
+              id="preferences"
+              name="preferences"
+              placeholder="Enter any special preferences"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Yatra Hub. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- Footer -->
+<footer>
+  <p>&copy; 2024 Yatra Hub. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript: Show alert on form submit -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".booking-form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Your Tour is booked. Thank you for connecting with Yatra Hub!");
+      form.reset();
+    });
+  });
+</script>
+
+
+  </body>
+</html>

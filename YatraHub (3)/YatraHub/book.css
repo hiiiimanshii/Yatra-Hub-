@@ -1,0 +1,117 @@
+/* General form styles */
+.booking-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+header {
+    background-image: url("https://img.freepik.com/premium-photo/model-aircraft-are-painted-white-background_37416-382.jpg?w=1380");
+}
+
+section {
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-airplane-with-copy-space_23-2148436299.jpg?ga=GA1.1.1313196997.1725042124&semt=ais_hybrid");
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    
+}
+
+.booking-form input[type="text"]:focus,
+.booking-form input[type="date"]:focus,
+.booking-form input[type="number"]:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+}
+
+.booking-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Button styles */
+.booking-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: pink;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: palevioletred;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .booking-form {
+        padding: 20px;
+    }
+    
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 14px;
+    }
+
+    .booking-form button {
+        font-size: 16px;
+    }
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #007BFF;
+}
+
+/* Adjustments for section background */
+.section.bg-light {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+/* Style for form headings and descriptions */
+h1, p {
+    margin-bottom: 15px;
+}

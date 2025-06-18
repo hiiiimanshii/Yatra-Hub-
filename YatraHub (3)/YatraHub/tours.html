@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore India - Tours, hotels, dining, and cultural experiences. Discover the beauty and diversity of India.">
+    <title>India Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header role="banner">
+        <div class="container">
+            <!-- Logo and Navigation -->
+            <div class="logo-container">
+                <div class="yatra-hub"><a href="/">YATRA-HUB</a></div>
+                <nav aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="hotel.html">Hotels & Stays</a></li>
+                        <li><a href="tours.html" target="_blank">Tours</a></li>
+                        <li><a href="restaurants.html">Restaurants & Cafes</a></li>
+                        <li><a href="culture.html" target="_blank">Culture</a></li>
+                        <li><a href="safety.html" target="_blank">Safety</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Experience the Magic of India</h1>
+                <p>Your adventure begins here</p>
+                <form class="search-form" role="search">
+                    <label for="search" class="visually-hidden">Search</label>
+                    <input id="search" type="text" placeholder="Search tours, stays, dining..." aria-label="Search">
+                    <button type="submit" aria-label="Submit Search">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <div class="container">
+            <!-- Tours Section -->
+            <section id="tours">
+                <h1 class="section-title">Tours</h1>
+                <div class="hotel-card-container">
+                    <!-- Card 1 -->
+                    <article class="hotel-card">
+                        <h3>Khirsu By GMVN</h3>
+                        <p>Pauri, India</p>
+                        <p>Khirsu By GMVN offers accommodation in Pauri with great location and mountain views.</p>
+                        <p><strong>Facilities:</strong> Toilet paper, Towels, Bathroom</p>
+                        <p><strong>Rating:</strong> 3 stars</p>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="hotel-card">
+                        <h3>Ooty Hill Resort</h3>
+                        <p>Ooty, India</p>
+                        <p>Situated in Ooty in the Tamil Nadu Region, 8 km from Ooty Lake.</p>
+                        <p><strong>Facilities:</strong> Towels, Bidet, Bathtub</p>
+                        <p><strong>Rating:</strong> 3 stars</p>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="hotel-card">
+                        <h3>Taj Mahal</h3>
+                        <p>Agra, Uttar Pradesh, India</p>
+                        <p>The Taj Mahal, a UNESCO World Heritage Site, is a stunning white marble mausoleum and a symbol of eternal love.</p>
+                        <p><strong>Facilities:</strong> Guided Tours, Audio Guides, Parking, Food Stalls</p>
+                        <p><strong>Rating:</strong> 5 stars</p>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="hotel-card">
+                        <h3>City Palace</h3>
+                        <p>Jaipur, Rajasthan, India</p>
+                        <p>The City Palace of Jaipur is a magnificent blend of Mughal and Rajasthani architecture, offering rich historical insights.</p>
+                        <p><strong>Facilities:</strong> Museum, Photography Spots, Guided Tours</p>
+                        <p><strong>Rating:</strong> 4 stars</p>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="hotel-card">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Alleppey, Kerala, India</p>
+                        <p>Experience the serene backwaters of Kerala on a traditional houseboat, surrounded by lush greenery and calm waters.</p>
+                        <p><strong>Facilities:</strong> Houseboats, Food on Board, Nature Tours</p>
+                        <p><strong>Rating:</strong> 5 stars</p>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="hotel-card">
+                        <h3>Gateway of India</h3>
+                        <p>Mumbai, Maharashtra, India</p>
+                        <p>The Gateway of India is a historic arch-monument located on the waterfront in the bustling city of Mumbai.</p>
+                        <p><strong>Facilities:</strong> Photography, Street Food, Nearby Cafes</p>
+                        <p><strong>Rating:</strong> 4 stars</p>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="hotel-card">
+                        <h3>Qutub Minar</h3>
+                        <p>Delhi, India</p>
+                        <p>Qutub Minar is a UNESCO World Heritage Site and the tallest brick minaret in the world, showcasing Indo-Islamic architecture.</p>
+                        <p><strong>Facilities:</strong> Guided Tours, Gardens, Nearby Cafes</p>
+                        <p><strong>Rating:</strong> 5 stars</p>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="hotel-card">
+                        <h3>Rann of Kutch</h3>
+                        <p>Kutch, Gujarat, India</p>
+                        <p>The Rann of Kutch is a vast salt marsh famous for its white desert, cultural festivals, and camel safaris.</p>
+                        <p><strong>Facilities:</strong> Desert Safari, Cultural Events, Camping</p>
+                        <p><strong>Rating:</strong> 4 stars</p>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="hotel-card">
+                        <h3>Mysore Palace</h3>
+                        <p>Mysore, Karnataka, India</p>
+                        <p>Mysore Palace is a splendid royal residence known for its Indo-Saracenic architecture and illuminated evening views.</p>
+                        <p><strong>Facilities:</strong> Audio Guides, Photography, Light Shows</p>
+                        <p><strong>Rating:</strong> 5 stars</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Chatbot Section -->
+            <section id="chatbot">
+                <div id="chatbot-container">
+                    <iframe src="chatbot/chatbot.html" id="chatbot-frame"></iframe>
+                </div>
+            </section>
+
+            <!-- Google Translate Section -->
+            <div id="google_translate_element" style="position: fixed; bottom: 20px; left: 20px; z-index: 900;"></div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>Contact Us: <a href="mailto:info@indiaexplore.com">info@indiaexplore.com</a> | +91 960 437 0733</p>
+            <p>&copy; 2024 India Explore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

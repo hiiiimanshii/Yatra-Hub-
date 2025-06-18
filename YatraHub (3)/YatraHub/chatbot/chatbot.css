@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2';
+}
+
+body {
+    background-color: #dcd9d9;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#chatbot-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chat-box {
+    padding: 20px;
+    height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.message {
+    max-width: 75%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.client-message {
+    background-color: #74a6e7;
+    align-self: flex-end;
+}
+
+.server-message {
+    background-color: #c1bbbb;
+    align-self: flex-start;
+}
+
+.input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#007bff;
+}

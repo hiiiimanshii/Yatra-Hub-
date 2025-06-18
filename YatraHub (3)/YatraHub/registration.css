@@ -1,0 +1,103 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    opacity: 100px;
+    backdrop-filter: blur(8px);
+
+}
+
+header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    background-color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-field input, .input-field select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 5px;
+}
+
+input:focus, select:focus {
+    border-color: pink;
+}
+
+button.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+button.submit:hover {
+    background-color: silver;
+}
+
+button.submit i {
+    margin-left: 8px;
+}
+

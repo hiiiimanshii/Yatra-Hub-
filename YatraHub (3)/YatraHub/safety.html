@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore India - Tours, hotels, dining, and cultural experiences. Discover the beauty and diversity of India.">
+    <title>India Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Safety Page -->
+    <header role="banner">
+        <div class="container">
+            <!-- YATRA-HUB logo -->
+            <div class="logo-container">
+                <div class="yatra-hub"><a href="/">YATRA-HUB</a></div>
+                <nav aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="hotel.html">Hotels & Stays</a></li>
+                        <li><a href="tours.html" target="_blank">Tours</a></li>
+                        <li><a href="Restaurants.html">Restaurants & Cafes</a></li>
+                        <li><a href="culture.html" target="_blank">Culture</a></li>
+                        <li><a href="safety.html" target="_blank">Safety</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hero">
+                <h1>Experience the Magic of India</h1>
+                <p>Your adventure begins here</p>
+                <form class="search-form" role="search">
+                    <label for="search" class="visually-hidden"></label>
+                    <input id="search" type="text" placeholder="Search tours, stays, dining..." aria-label="Search">
+                    <button type="submit" aria-label="Submit Search">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <h2 style="text-align: center;">Safety</h2>
+            <div class="safety-card-container">
+                <!-- Ambulance Helpline Section -->
+                <article class="safety-card">
+                    <h3>Ambulance Helpline</h3>
+                    <p>The National Ambulance Number established by the Indian Government through Public-Private Partnerships, offering emergency medical service.</p>
+                    <p><strong>Number:</strong> 108</p>
+                </article>
+
+                <!-- Gateway of India -->
+                <article class="safety-card">
+                    <h3>Gateway of India</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Colaba Police Station: </strong>600m</p>
+                    <p><strong>Helpline Number:</strong> 100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>Aslok Hospital: </strong>2.5km</p>
+                    <p><strong>Breach Candy Hospital: </strong>3km</p>
+                    <p><strong>Helpline Number: </strong>108</p>
+                </article>
+
+                <!-- Ajanta Caves -->
+                <article class="safety-card">
+                    <h3>Ajanta Caves</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Fardapur Police Station: </strong>18-20km</p>
+                    <p><strong>Helpline Number:</strong> 100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>Government Medical College and Hospital: </strong>60km</p>
+                    <p><strong>Aditya Birla Memorial Hospital: </strong>60km</p>
+                    <p><strong>Helpline Number:</strong>108</p>
+                </article>
+
+                <!-- Taj Mahal -->
+                <article class="safety-card">
+                    <h3>Taj Mahal</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Agra Police Station: </strong>3km</p>
+                    <p><strong>Helpline Number:</strong> 100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>Government Medical College and Hospital: </strong>60km</p>
+                    <p><strong>Aditya Birla Memorial Hospital: </strong>60km</p>
+                    <p><strong>Helpline Number:</strong> 108</p>
+                </article>
+
+                <!-- India Gate -->
+                <article class="safety-card">
+                    <h3>India Gate</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Connaught Place Police Station: </strong>2km</p>
+                    <p><strong>Helpline Number:</strong>100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>AIIMS: </strong>4km</p>
+                    <p><strong>Safdarjung Hospital: </strong>3km</p>
+                    <p><strong>Helpline Number:</strong>108</p>
+                </article>
+
+                <!-- Mumbai Railway Station -->
+                <article class="safety-card">
+                    <h3>Mumbai Railway Station</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Chhatrapati Shivaji Maharaj Terminus Police Station</strong></p>
+                    <p><strong>Helpline Number:</strong>100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>KEM: </strong>6km</p>
+                    <p><strong>Jaslok Hospital: </strong>5km</p>
+                    <p><strong>Helpline Number:</strong>108</p>
+                </article>
+
+                <!-- Red Fort -->
+                <article class="safety-card">
+                    <h3>Red Fort</h3>
+                    <h4>Police Station:</h4>
+                    <p><strong>Delhi Police Headquarters: </strong>3.5km</p>
+                    <p><strong>Helpline Number:</strong>100</p>
+                </article>
+
+                <article class="safety-card">
+                    <h4>Nearby Hospitals</h4>
+                    <p><strong>LNJP Hospital: </strong>3km</p>
+                    <p><strong>Helpline Number:</strong>108</p>
+                </article>
+            </div>
+        </div>
+
+        <!-- Chatbot Integration -->
+        <div id="chatbot-container">
+            <iframe src="chatbot/chatbot.html" id="chatbot-frame"></iframe>
+        </div>
+
+        <!-- Google Translate Integration -->
+        <div id="google_translate_element" style="position: fixed; bottom: 20px; left: 20px; z-index: 900;"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>Contact Us: <a href="mailto:info@indiaexplore.com">info@indiaexplore.com</a> | +91 960 437 0733</p>
+            <p>&copy; 2024 India Explore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

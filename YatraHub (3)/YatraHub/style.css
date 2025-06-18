@@ -1,0 +1,488 @@
+/* General styles */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Baloo Bhai 2";
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#chatbot-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+li a:hover {
+  color: #0056b3;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: #aacff7;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 23px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Header styles */
+header {
+  background-image: url("https://img.freepik.com/premium-photo/model-aircraft-are-painted-white-background_37416-382.jpg?w=1380");
+  padding: 1px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yatra-hub {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: large;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  margin-right: 15px;
+  align-items: center;
+}
+
+.translation-container select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.translate {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url(banner1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color:rgb(17, 84, 171);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Section styles */
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+}
+
+.hotel-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+  gap: 20px;
+  padding: 20px;
+}
+.culture-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+  gap: 20px;
+  padding: 20px;
+}
+.rest-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+  gap: 20px;
+  padding: 20px;
+}
+.safety-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+  gap: 20px;
+  padding: 20px;
+}
+
+.hotel-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.culture-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.safety-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.rest-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 90%;
+}
+
+.hotel-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+.rest-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.culture-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.hotel-card p {
+  margin-bottom: 10px;
+}
+.rest-card p {
+  margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Login icon styling */
+.login-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.2rem;
+}
+
+.login-icon a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-icon a:hover {
+  color: #3498db;
+}
+
+.login-icon i {
+  font-size: 2rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-image: url("https://img.freepik.com/premium-photo/model-aircraft-are-painted-white-background_37416-382.jpg?w=1380");
+  padding: 1px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 70%;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #555;
+}
+
+/* Section Titles */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff7e5f;
+  margin: 10px auto 0;
+}
+
+/* Cards */
+.hotel-card-container,
+.culture-card-container,
+.safety-card-container,
+.restaurant-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.hotel-card,
+.culture-card,
+.safety-card,
+.restaurant-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hotel-card:hover,
+.culture-card:hover,
+.safety-card:hover,
+.restaurant-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-card h3,
+.culture-card h3,
+.safety-card h3,
+.restaurant-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hotel-card p,
+.culture-card p,
+.safety-card p,
+.restaurant-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.hotel-card strong,
+.culture-card strong,
+.safety-card strong,
+.restaurant-card strong {
+  color: #ff7e5f;
+}
+
+/* Buttons */
+button {
+  background-color: #ff7e5f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
